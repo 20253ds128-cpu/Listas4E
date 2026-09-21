@@ -21,18 +21,18 @@ fun PlaceScreen() {
             "Ciudad hermosa y bellos paisajes."),
         Place(
             2,
-            R.drawable.guadalajara,
-            "Guadalajara",
+            R.drawable.monterrey,
+            "Monterrey",
             "Ciudad hermosa y bellos paisajes."),
         Place(
             3,
-            R.drawable.guadalajara,
-            "Guadalajara",
+            R.drawable.cuernavaca,
+            "Cuernavaca",
             "Ciudad hermosa y bellos paisajes."),
         Place(
             4,
-            R.drawable.guadalajara,
-            "Guadalajara",
+            R.drawable.bajacalisur,
+            "B. California Sur",
             "Ciudad hermosa y bellos paisajes.")
     )
 
