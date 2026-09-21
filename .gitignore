@@ -1,3 +1,4 @@
+# Archivos de construcción y binarios
 *.iml
 .gradle
 /local.properties
@@ -6,10 +7,18 @@
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea/assetStudio.xml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+
+# Archivos de firma y llaves (¡NUNCA los subas!)
+*.jks
+*.keystore
+google-services.json
+
+# Logs
+/captures
+*.log

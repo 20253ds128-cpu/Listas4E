@@ -1,11 +1,22 @@
 package mx.edu.utez.conversor.listas4e.ui.components
 
+import android.R.attr.font
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Card
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import mx.edu.utez.conversor.listas4e.R
 import mx.edu.utez.conversor.listas4e.ui.model.Place
 
@@ -14,10 +25,16 @@ fun PlaceCard(place: Place) {
 
     Column() {
         Card() {
-            Text(place.title)
-            Text(place.desription)
+            Text(place.title,
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold)
+            Text(place.desription,
+                fontSize = 18.sp,
+                fontStyle = FontStyle.Italic)
             Image(painterResource(place.image),
-                "Guadalajara")
+                "Guadalajara",
+                modifier = Modifier.fillMaxWidth().height(200.dp),
+                contentScale = ContentScale.Crop)
 
         }
     }
